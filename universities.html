@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>UniStats Website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<nav class="nav-bar">
+			
+			<img class="logo" src="images/logo.png" alt="Logo">
+			<ul class="nav-menu">
+				<li><a href="statistics.html">Statistics</a></li>
+				<li><a class="active" href="universities.html">Universities</a></li>
+				<li><a href="index.html">Home</a></li>	  
+				  
+			</ul>		
+	</nav>
+
+	<section>
+	    <br><br><br>
+		<div class="row">
+		<div>
+			<h3>List of Universities</h3>
+			<p>Select a country to view a list of universities in that country and links to their websites.</p>
+		</div>
+			<div class="dropdown col span-1-of-5 box">
+  				<button class="dropbtn"><b>Select Country &nbsp;&nbsp;<i class="arrow down"></i></b></button>
+  				<div class="dropdown-content">
+    				<a class="country" href="#" onclick="displayUnis('cameroon'); readCountry('CMR');">Cameroon</a>
+    				<a class="country" href="#" onclick="displayUnis('mauritius'); readCountry('MUS');">Mauritius</a>
+    				<a class="country" href="#" onclick="displayUnis('united kingdom'); readCountry('GBR');">UK</a>
+  				</div>
+			</div>
+			<div class="col span-3-of-5 box">
+  				<h3 class="countryName"></h3>
+  			</div>
+		</div>
+		
+		<br><br><br>
+		<div class="row" id="list">
+			
+		</div>
+	</section>
+
+	<footer>
+		<div class="" id="footer-menu">
+		<div class = "row">
+			<div class="col span-3-of-5 box">
+				<h3>About Us</h3>
+				<p>UniStats is your go-to place for all information regarding tertiary education in different countries. The information provided is from reliable sources and since trustworthy.</p>
+				<a class="btn btn-full" href="index.html#about">Learn More</a>
+			</div>
+			<div class="col span-1-of-5 box">
+				
+				<h3>Contact Us</h3>
+				<ul class="country-link">
+					<li><h5>African Leadership University</h5></li><br>
+					<li><h6>21001, West Building</h6></li>
+					<li><h6>Beau Plan Business Park</h6></li>
+					<li><h6>Pamplemousses, Mauritius</h6></li>
+				</ul>
+			</div>
+			<div class="col span-1-of-5 box">
+				<h3>Countries</h3>
+				<ul class="country-link">
+					<li>Cameroon</li>
+					<li>Mauritius</li>
+					<li>UK</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+
+		<div class="" id="copyright-text">
+			<p>&#169;UniSats 2018</p>
+		</div>
+	</footer>
+<script type="text/javascript" src="js/script.js"></script>	
+</body>
+</html>

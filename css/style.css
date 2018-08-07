@@ -1,0 +1,325 @@
+/*Best practice*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	/*setting defaults. Everything will be relative to these*/
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	color: #555;
+}
+
+.row{
+	/*center it within the html page, top and botton =0 and left and right = auto*/
+	margin:0 auto;
+	/*max width spilloff when the max width is attaine*/
+	max-width: 1140px; 
+}
+
+h1{
+	font-size: 240%; /*which means its 48 relative to the html cuz 240% of 20px */
+	color: #3AAFA9;
+	margin-top: 0;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+	word-spacing: 4px;
+}
+
+/*Styling the header*/
+
+.logo{
+	float: left;
+   /* width: 20%;*/
+    margin-top: 3px;
+}
+
+.nav-menu{
+	width: 80%;
+	list-style-type: none;
+	height: auto;
+	float: right;
+}
+
+.nav-menu li {
+	float: right;
+}
+
+.nav-bar{
+	position: fixed;
+    background-color: #3AAFA9;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0 10%;
+}
+
+
+.nav-menu li a {
+    display: block;
+    color: black;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover {
+    background-color: #2B7A78;
+    color: white;
+}
+
+.active {
+    background-color: #2B7A78;
+    height: inherit;
+    color: white;
+}
+
+header{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/header.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.welcome-text{
+	position: absolute;
+	max-width: 1140px;
+	text-align: center;
+	top:40%;
+	left: 15%;
+	/*
+	transform: translate(-50%, -50%);*/
+}
+
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 300;
+	border-radius: 200px;
+	text-decoration: none;
+	margin-right:15px;
+}
+
+.btn-full{
+	background-color: #3AAFA9;
+	color: black;
+	border: 1px solid #3AAFA9;
+}
+
+
+.btn-full:hover{
+	background-color: #2B7A78;
+	color: white;
+	border: 1px solid #2B7A78;
+
+}
+
+/*styling about section*/
+
+.part1, .part2{
+	border: 1px solid #ccc ;
+}
+
+p.description{
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.uniImage1{
+	width: 100%;
+}
+
+.uniImage2{
+	width: 100%;
+}
+
+h2{
+	font-size: 36px;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+h3{
+	padding: 10px 0 10px 0;
+}
+
+p{
+	padding: 10px 0 20px 0;
+}
+
+
+/*Styling the Footer*/
+
+#footer-menu{
+	background-color: #f2f2f2;
+
+}
+
+#copyright-text{
+	background-color: #3AAFA9;
+
+}
+
+.box{
+	padding: 20px;
+	
+}
+
+#copyright-text p{
+	text-align: center;
+}
+
+.country-link{
+	list-style-type: none;
+}
+
+/*style for dropdown with reference to w3schools.com*/
+.dropbtn {
+    background-color: #3AAFA9;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #2B7A78;
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #3AAFA9;
+	color: white;
+}
+
+/*styling the dropdown arrow*/
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    margin-bottom: 2px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+ .country{
+
+ }
+/*styling the data selection section*/
+.vertical-menu {
+    width: 420px;
+    height: 380px;
+    overflow-y: auto;
+    /*margin-top: -70px;*/
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+ .vertical-menu a:hover {
+    background-color: #2B7A78;
+    color: white;
+}
+
+.vertical-menu a.active {
+    background-color: #3AAFA9;
+    color: black;
+    height: 50px;
+}
+
+
+/*Styling the table with list of universities*/
+#list th{
+	background-color: #3AAFA9;
+	height: 50px;
+}
+
+#list th, td{
+	border: 1px solid #ccc; 
+}
+
+#list td{
+	text-align: center;
+	height: 40px;
+}
+
+#list table{
+	border-collapse: collapse;
+}
+
+#list a:hover{
+	color: #2B7A78;
+}
+
+#list a{
+	color: #3AAFA9;
+	text-decoration: none;
+}
+
+/*#list t{
+	text-align: center;
+}*/
+
+@media screen and (max-width: 460px) and (min-width: 400px) {
+.nav-menu {
+ width: 100%;
+ display: inline !important;
+ font-size: 0.85em;
+ text-align: center;
+}
+.nav-menu li{
+	float: right;
+
+}
+
+}
+
+
+
+
+
+
+
